@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="MainThemeNoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:textColor">@color/day_text</item>
+        <item name="android:textColorPrimary">@color/day_text</item>
+
+        <item name="android:buttonStyle">@style/MainThemeButton.Day</item>
+        <item name="android:textViewStyle">@style/MainThemeTextView.Day</item>
+        <item name="android:listViewStyle">@style/MainThemeListView.Day</item>
+    </style>
+
+    <style name="MainThemeButton.Day" parent="android:Widget.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">@dimen/padding_large</item>
+        <item name="android:background">@drawable/day_theme_button</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/day_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MainThemeTextView.Day" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/day_text</item>
+    </style>
+
+    <style name="MainThemeListView.Day" parent="android:Widget.ListView">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+    <style name="MainThemeNoActionBar.Night" parent="MainThemeNoActionBar">
+        <item name="android:textColor">@color/night_text</item>
+        <item name="android:textColorPrimary">@color/night_text</item>
+
+        <item name="android:buttonStyle">@style/MainThemeButton.Night</item>
+        <item name="android:textViewStyle">@style/MainThemeTextView.Night</item>
+        <item name="android:listViewStyle">@style/MainThemeListView.Night</item>
+    </style>
+
+    <style name="MainThemeButton.Night" parent="android:Widget.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">@dimen/padding_large</item>
+        <item name="android:background">@drawable/night_theme_button</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/night_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MainThemeTextView.Night" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/night_text</item>
+    </style>
+
+    <style name="MainThemeListView.Night" parent="android:Widget.ListView">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+</resources>

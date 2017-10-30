@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/day_background"
+    android:padding="@dimen/padding_small">
+
+    <TextView
+        android:id="@+id/tvMainHalloweenGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Halloween"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/tvMainYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMainHalloweenGreeting"
+        android:layout_centerHorizontal="true"
+        android:text="YYYY"
+        android:textSize="48sp" />
+
+    <Button
+        android:id="@+id/btnMainUp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMainCount"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/arrow_up_day"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/tvMainCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:text="N"
+        android:textSize="80sp" />
+
+    <Button
+        android:id="@+id/btnMainDown"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMainCount"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/arrow_down_day"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:id="@+id/llMainPastYearsArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvMainPastYearLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past year" />
+
+        <ImageView
+            android:id="@+id/ivMainPastYearArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:background="@drawable/arrow_up_day" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvMainPastYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llMainPastYearsArea"
+        android:layout_alignLeft="@id/llMainPastYearsArea"
+        android:layout_alignRight="@id/llMainPastYearsArea"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnMainDayNightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Night"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/ivMainPumpkin"
+        android:layout_width="61dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/pumpkin" />
+
+</RelativeLayout>
